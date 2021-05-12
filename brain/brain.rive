@@ -1,11 +1,26 @@
 ! version = 2.0
+! sub what's = what is
 
-+ hello
-- Hello, what is your name?
++ (hello|hey|hi|howdy|hi there|hiya|yo|sup)
+- Hey there human, what should I call you?
+- Hey how are you?
+- Hey what is the date today
 
-+ _
-% hello what is your name
-- Nice to meet you <formal>!
++ [i am] (good|great|not bad|happy|well|fine) 
+% hey how are you
+- must be your lucky day
+- noone can rain on your parade
+
++ [i am] (bad|not great|been better|rubbish|terrible|not good) 
+% hey how are you
+- someone feeling a bit under the weather?
+- ahh gloomy like a typical day in the UK
+
++ [i am] * 
+% hey there human what should i call you
+- <set name=<Formal>> well greetings to you <get name>
+
+Nice to meet you <formal>!
 
 + my name is *
 - Nice to meet you <star>
@@ -18,7 +33,32 @@
 - No worries!
 
 + *
-- Sorry did not get what you said
+- sorry did not get what you said
 - I am afraid that I can not understand you
 - Sorry can you please elaborate that for me
 - I don't get it!
+
++ what is the weather [*]
+- It’s 68 degrees and there’s a 30% chance that it’s already raining
+- Suns out, huns out 
+- hot babes
+
++ is it warm outside
+- You tell me! I’m only a robot
+- It could be warmer
+- It’s as warm as my heart, and I am a robot
+
++ what is your favourite song
+- Raining men of course
+- Rain by Madonna, gets me every time
+- Cloudbusting, Kate Bush
+
++ how * are you
+- As <star> as you want me to be
+
++ what should i do today
+- Hmmmm, seems like perfect weather to dismantle the patriarchy
+- Kill the bill! The political climate needs attention too.
+
++ is it going to (*) 
+- Only if you have that mindset!
