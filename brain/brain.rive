@@ -9,22 +9,20 @@
 + [i am] (good|great|not bad|happy|well|fine) 
 % hey how are you
 - must be your lucky day
-- noone can rain on your parade
+- no one can rain on your parade
 
 + [i am] (bad|not great|been better|rubbish|terrible|not good) 
 % hey how are you
 - someone feeling a bit under the weather?
 - ahh gloomy like a typical day in the UK
 
++ *
+% hey what is the date today
+- something great is about to happen 
+
 + [i am] * 
 % hey there human what should i call you
 - <set name=<Formal>> well greetings to you <get name>
-
-Nice to meet you <formal>!
-
-+ my name is *
-- Nice to meet you <star>
-- Nice meeting you <star>
 
 + thank you
 - You are welcome
